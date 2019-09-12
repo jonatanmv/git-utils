@@ -64,10 +64,10 @@ $ git remote add origin git@github.com:jonatanmv/Git-Utils.git
 $ git remote add paul https://github.com/paulboone/Git-Utils
 ```
 
-So you will download lates changes on remotes with ```git fetch <remote>```:
+So you will download lates changes on remotes with ```git fetch <remote>```. *fetch* only download info not the actual files. For that you will use *pull* (It will fetch and download changes).
 
 ```console
-$ git fetch paul
+$ git pull origin
 ```
 
 ### Adding files
