@@ -67,7 +67,7 @@ $ git remote add paul https://github.com/paulboone/Git-Utils
 So you will download lates changes on remotes with ```git fetch <remote>```:
 
 ```console
-git fetch paul
+$ git fetch paul
 ```
 
 ### Adding files
