@@ -12,12 +12,6 @@ $ cd /Users/user/project/src
 $ git init
 ```
 
-### Verifying configuration
-
-```console
-$ git config --list --show-origin
-```
-
 ### Getting help
 
 These commands are nice because you can access them anywhere, even offline.
@@ -28,23 +22,28 @@ $ git <verb> --help
 $ man git-<verb>
 ```
 
-### Adding files
+### Verifying configuration
 
 ```console
-$ git add *.c
-$ git add LICENSE
+$ git config --list --show-origin
 ```
 
-### Commit 
+### Setup your info 
+
+If not already done (as global config for example) setup your name and email.
 
 ```console
-$ git commit -m 'initial project version'
+$ git config --global user.name "Your Real Name"
+$ git config --global user.email "you@email.com"
 ```
 
-### Clonning repository
+### Setting up local repository
+
+If your start from an existing project clone it.
 
 ```console
-$ git clone https://github.com/jonatanmv/Git-Utils
+$ git clone git@github.com:jonatanmv/Git-Utils.git
+$ git remote add upstream git@github.com:jonatanmv/Git-Utils.git
 ```
 
 or
@@ -53,10 +52,23 @@ or
 $ git clone https://github.com/jonatanmv/Git-Utils local_directory
 ```
 
+### Adding files
+
+```console
+$ git add *.c
+$ git add LICENSE
+```
+
 ### Checking status of your files
 
 ```console
 $ git status
+```
+
+### Commit 
+
+```console
+$ git commit -m 'initial project version'
 ```
 
 ### Ignoring files
@@ -65,8 +77,15 @@ You can easily create a *.gitignore* file this way:
 
 ```console
 $ cat .gitignore
-*.[oa]
+```
+
+```
+__pycache__
 *~
+*.pyc
+.DS_Store
+.gitignore
+logfiles/
 ```
 
 Here another *.ignorefile*
