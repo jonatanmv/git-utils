@@ -55,6 +55,7 @@ You can check your remotes info with ```git remote```. For example, when you clo
 
 ```console
 $ git remote -v
+$ git remote show origin
 ```
 
 And you add remotes like this:
