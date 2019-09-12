@@ -43,13 +43,31 @@ If your start from an existing project clone it.
 
 ```console
 $ git clone git@github.com:jonatanmv/Git-Utils.git
-$ git remote add upstream git@github.com:jonatanmv/Git-Utils.git
 ```
-
 or
-
 ```console
 $ git clone https://github.com/jonatanmv/Git-Utils local_directory
+```
+
+### Setting up remotes
+
+You can check your remotes info with ```git remote```. For example, when you clone a repository it will add automatically the *origin* remote. So ```git fetch origin``` fetches any new work that has been pushed to that server since you cloned or fetched.
+
+```console
+$ git remote -v
+```
+
+And you add remotes like this:
+
+```console
+$ git remote add origin git@github.com:jonatanmv/Git-Utils.git
+$ git remote add paul https://github.com/paulboone/Git-Utils
+```
+
+So you will download lates changes on remotes with ```git fetch <remote>```:
+
+```console
+git fetch paul
 ```
 
 ### Adding files
