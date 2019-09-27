@@ -134,3 +134,9 @@ doc/**/*.pdf
 ```console
 $ git clone https://github.com/schacon/simplegit-progitx1x1x
 ```
+
+### Push !
+
+```console
+$ git push
+```
