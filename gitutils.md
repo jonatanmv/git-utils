@@ -65,6 +65,12 @@ $ git remote add origin git@github.com:jonatanmv/Git-Utils.git
 $ git remote add paul https://github.com/paulboone/Git-Utils
 ```
 
+Or change from ssh to https:
+
+```console
+git remote set-url origin https://github.com/jonatanmv/Git-Utils.git
+```
+
 So you will download lates changes on remotes with ```git fetch <remote>```. *fetch* only download info not the actual files. For that you will use *pull* (It will fetch and download changes).
 
 ```console
