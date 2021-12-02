@@ -71,7 +71,7 @@ Or change from ssh to https:
 git remote set-url origin https://github.com/jonatanmv/Git-Utils.git
 ```
 
-Push an existing repository from the command line:
+Create the repository on github website and push your repository from the command line:
 
 ```console
 git push -u origin master
