@@ -73,7 +73,9 @@ git remote set-url origin https://github.com/jonatanmv/Git-Utils.git
 
 Push an existing repository from the command line:
 
+```console
 git push -u origin master
+```
 
 So you will download lates changes on remotes with ```git fetch <remote>```. *fetch* only download info not the actual files. For that you will use *pull* (It will fetch and download changes).
 
