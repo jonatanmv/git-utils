@@ -26,6 +26,7 @@ $ man git-<verb>
 
 ```console
 $ git config --list --show-origin
+$ git config --list
 ```
 
 ### Setup your info 
