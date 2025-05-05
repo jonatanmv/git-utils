@@ -38,13 +38,6 @@ $ git config --global user.name "Your Real Name"
 $ git config --global user.email "you-email@@users.noreply.github.com"
 ```
 
-In case commands are blocked by email privacy then:
-
-```console
-$ git config --global user.email "you-email@@users.noreply.github.com"
-$ git commit --amend --reset-author
-```
-
 ### Setting up local repository
 
 If your start from an existing project clone it.
@@ -160,3 +153,11 @@ $ git clone https://github.com/schacon/simplegit-progitx1x1x
 ```console
 $ git push
 ```
+
+In case commands are blocked by email privacy then:
+
+```console
+$ git config --global user.email "you-email@@users.noreply.github.com"
+$ git commit --amend --reset-author
+```
+
