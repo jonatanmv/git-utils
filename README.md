@@ -35,7 +35,14 @@ If not already done (as global config for example) setup your name and email.
 
 ```console
 $ git config --global user.name "Your Real Name"
-$ git config --global user.email "you@email.com"
+$ git config --global user.email "you-email@@users.noreply.github.com"
+```
+
+In case commands are blocked by email privacy then:
+
+```console
+$ git config --global user.email "you-email@@users.noreply.github.com"
+$ git commit --amend --reset-author
 ```
 
 ### Setting up local repository
